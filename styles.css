@@ -1,22 +1,127 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+* {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+html {
+    z-index: -2;
+    background-image: url("images/background.png"); /*Information about "HTML" Background image found on: Coyler, C. (2009, August 21). "Perfect Full Page Background Image". https://css-tricks.com/perfect-full-page-background-image/ */
+    background-size: cover; /*This background is actually just an image I made myself using a gradient tool in Paint.net*/
 }
 
-.container {
+.banner {
+    z-index: -1;
+    background-image: url("images/banner.png"); /*This too is an image I made in Paint.net"*/
+    background-repeat: no-repeat;
+}
+
+.intro h2 {
+    margin-bottom: 2px;
+}
+
+.intro h4 {
+    margin: 0px;
+    margin-bottom: 15px;
+}
+
+.intro h4 {
+    margin: 5px;
+}
+
+.input form {
     text-align: center;
 }
 
-h1 {
-    color: red;
-    font-size: 36px;
+.input p {
+    margin: 0px;
 }
 
-p {
-    color: #666;
-    font-size: 18px;
+.resume h3 {
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
+
+.resume h4 {
+    margin: 2px;
+}
+
+.resume ul {
+    margin: 5px;
+}
+
+.resume {
+    display: none;
+}
+
+.resume h3 { /*First try!*/
+    border-bottom: 2px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    display: inline-block;
+    border-style: solid;
+}
+
+.html {
+    display: none;
+}
+
+
+
+.contact h4 {
+    margin: 0px;
+}
+
+
+.cheat {
+    border-style: solid;
+    border-radius: 1px; 
+}
+
+fieldset {
+    display: inline;
+    border-style: solid;
+    border-color: black;
+}
+
+.html table {
+    border-style: solid;
+    border-radius: 1px; 
+}
+
+.cheatj {
+    border-style: solid;
+    border-radius: 1px; 
+}
+
+.cheatSheet {
+    display: none;
+    background-color: orange;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.cheatSheet a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.javascript {
+    display: none;
+}
+
+.homeButton {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.cheatIntro {
+    text-align: center;
+}
+
+/*I am not very good at understanding how to style a webpage in a way that looks pleasing. a few versions were quite egregious to look at so I'm settling for something super simple*/
+
+
+

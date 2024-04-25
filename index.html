@@ -1,16 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
-  <title>Website Under Construction</title>
+<head> <!--This project requires an active internet connection for full functionality.-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The final Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Share+Tech&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script> <!--Information on "defer" found on: prof3ssorSt3v3. (2023, August 11). "Yes to using DOMContentLoaded. However the recommended approach is now to add the defer attribute to the script tag." [Comment on blogpost "Does anyone use DOMContentLoaded??"].https://www.reddit.com/r/learnjavascript/comments/15ookb0/does_anyone_use_domcontentloaded/ --> 
 </head>
+
+<!--I unfortunetaly never got the chance to ask about "pages" being seperate HTML pages or if they could be hidden sections, I created one extra page for the cheat sheet to demonstrate I knew how to.-->
 <body>
-  <div class="container">
-    <h1>Website Under Construction</h1>
-    <p>We're currently working on our website. Please check back soon!</p>
-  </div>
+
+    <div class="main" id="main">
+        <div class="intro">
+            <h2>Junaid Matyas-Hussain</h2>
+            <h4>Reliable and eager to learn. Looking to transition into the technology field.</h3>
+        </div>
+                <br>
+
+            <div class="contact">
+                <h4>1-403-499-8815</h4>
+                <h4>uzayr34@hotmail.ca</h4>
+                <h4>Calgary, AB T2J 6C7</h4>
+            </div>
+
+                <br>
+
+            <div class="input">
+                <p>Please type one of the keywords that match your search:</p>
+                <br>
+                <fieldset>
+                    <legend>Keywords</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <p>Resume</p>
+                            <p>Cheat Sheet</p>   
+                        </td>
+                    </tr>
+                </table>
+                </fieldset>
+                <br>
+                <form id="inputField">
+                    <input type="text" id="search">
+                    <button id="submitSearch">Take a look!</button>
+                </form>
+            </div>
+                
+            <div class="resume" id="resume">
+                <h2>Work Experience</h2>
+
+                <div class="ckn">
+                    <h3>Custodian</h3>
+                    <h4>CKN Property Services</h4>
+                    <ul>
+                        <li>Vacuum, mop and clean building common areas.</li>
+                        <li>Perform routine sanitization of pool areas and common surfaces.</li>
+                        <li>Refill and resupply building consumables such as hand soaps, paper towels and disinfectants.</li>
+                        <li>Keep track of and put in request for resupply of consumables and equipment.</li>
+                        <li>Perform light maintenace on equipment.</li>
+                        <li>Interact with residents and address complaints realted to building cleanliness.</li>
+                    </ul> 
+                </div>
+
+                <br>
+
+                <div class="covid">
+                    <h3>Emergency Medical Responder - (COVID Patient Isolation and Monitoring)</h3>
+                    <h4>MEDCOR Canada</h4>
+                    <ul>
+                        <li>Maintain clean and sanitary equipment, work area and patient intake room.</li>
+                        <li>Routine monitoring of patient health, vitals and symptoms. Recording all information in patient care reports.</li>
+                        <li>Transport patients to COVID test locations where required in MTC's.</li>
+                        <li>Educate patients on isolation requirements and resources for more information and support outlined by AHS.</li>
+                        <li>Work within a team to ensure smooth operation of the clinic, managing patient food delivery, intake schedule and appropriate reporting to AHS where required.</li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <div class="tracer">
+                    <h3>COVID Contact Tracer</h3>
+                    <h4>Ian Martin Group</h4>
+                    <ul>
+                        <li>Timely communication with newly COVID positive clients after assessing applicable medical history and Netcare test results.</li>
+                        <li>Collect COVID positive clients activities and provide isolation and quarantine instructions using approved AHS scripts.</li>
+                        <li>Assist clients in contacting social supports/benefits to ensure clients are able to isolate or quarantine safely and with limited difficulty.</li>
+                        <li>Complete documentation in CDOM for submission to Alberta Health.</li>
+                        <li>Followup with client close contacts, businesses and workplaces to assess PPE usage and potential exposures while maintaining client privacy.</li>
+                        <li>Notify outbreak teams and/or Safe and Healthy Environments and Medical Officer of Health for consults, and high risk locations.</li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <div class="medic">
+                    <h3>Emergency Medical Responder - (Construction Site)</h3>
+                    <h4>MEDCOR Canada</h4>
+                    <ul>
+                        <li>Provide quality medical care to site staff within the EMR scope of practice</li>
+                        <li>Perform equipment checks and minor maintenance on equipment.</li>
+                        <li>Complete and store patient care reports post injury and first aid incident reports for the site.</li>
+                        <li>Maintain a clean and sanitary first aid room.</li>
+                        <li>Work with safety departments to address safety concerns and report inceidents.</li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <div class="lifeguard">
+                    <h3>Lifeguard</h3>
+                    <h4>City of Calgary Recreation</h4>
+                    <ul>
+                        <li>Maintain safe leisure environment for staff and patrons.</li>
+                        <li>Provide first aid to injured persons and collect necessary information to be submitted at the end of treatment.</li>
+                        <li>Complete minor maintenance and cleaning tasks as required.</li>
+                        <li>Exercise diligence and effective supervision skills when scanning pool and deck.</li>
+                        <li>Use quick judgement to perform lifesaving rescues</li>
+                        <li>Ensure necessary PPE is used during interaction with injured persons or hazardous chemicals.</li>
+                        <li>Work as part of a team to control danger and/or deal with medical emergencies.</li>
+                    </ul>
+                </div>
+
+                <br>
+
+                <div class="swim">
+                    <h3>Swim Instructor</h3>
+                    <h4>City of Calgary Recreation</h4>
+                    <ul>
+                        <li>Maintain safe and interactive learning environment for candidates.</li>
+                        <li>Develop and plan lessons based on Lifesaving Society templates.</li>
+                        <li>Provide individual feedback to candidates and identify skills to work on.</li>
+                        <li>Complete candidate report card to be handed out on final day of lesson.</li>
+                        <li>continually evaluate and record candidate progress to be submitted on last day of lesson.</li>
+                        <li>Maintain qualification through in-facility training and recertification program.</li>
+                    </ul>
+                </div>
+
+                <div class="Education">
+                    <h2>Education</h2>
+                    <h3>Emergency Medical Responder</h3>
+                    <h4>SAIT - Calgary Alberta</h4>
+                    <h3>High School Diploma</h4>
+                    <h4>Chestermere High School - Calgary Alberta</h4>
+                </div>
+
+    </div>
+
+    <div class="cheatSheet" id="cheatSheet">
+        <a href="pages/htmlcheatsheet.html">Click here for the Cheat Sheets section!</a>
+    </div>
+
+
+</div>
+
 </body>
 </html>
