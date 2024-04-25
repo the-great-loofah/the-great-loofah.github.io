@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" class="banner">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div class="cheatIntro">
+        <h1>Coding Cheat Sheet</h1>
+    </div>
+
+    <div class="input">
+        <p>Please type one of the keywords that match the cheatsheet:</p>
+        <br>
+        <fieldset>
+            <legend>Keywords</legend>
+        <table>
+            <tr>
+                <td>
+                    <p>HTML</p>
+                    <p>Javascript</p>   
+                </td>
+            </tr>
+        </table>
+        </fieldset>
+        <br>
+        <form id="inputField">
+            <input type="text" id="search">
+            <button id="submitSearch">Take a look!</button>
+        </form>
+    </div>
+
+
+    <div class="html" id="html">
+        <fieldset>
+        <legend>HTML Cheat Sheet</legend>   
+            <table id="cheat" class="cheat">              
+                <tr>
+                    <td>HTML Page Setup:</td>
+                    <td>To Link Javascript: script src = "Name of JS file.js" closing script tag.</td>
+                </tr>
+
+                <tr>
+                    <td></td> <!--Take a look at this cool trick I found out from experimenting. Probably not a good way to do this but cool that it worked.-->
+                    <td>Add "defer" after the script source if accpeting input. Skips the DOMcontentloaded in JS.</td>
+                </tr>
+
+                <tr>
+                    <td></td> 
+                    <td>To link Css: link rel = "stylesheet" href="Name of CSS file.css" closing link tag</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td> <!--Yea, said "trick" has backfired real badly. This is going to be tedious.-->
+                </tr>
+
+                <tr>
+                    <td>Text Input:</td>
+                    <td>form id="custom form name"</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>input type:"(text) (number) (email) (etc)"</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>button id="custom ID" button text</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>Function Call Setup:</td>
+                    <td>inside of whatever tag "(activate parameter) + (functionname())"</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>Div Template:</td>
+                    <td>Assign Class for CSS and ID for JS, both can be the same for organization.</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>Assigning display types in CSS should target the parent div, not the content inside.</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>Image Setup:</td>
+                    <td>(self closing) src="internet link or directory" alt="text if image fails to load"</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>Misc Items:</td>
+                    <td>table: Requires tr for row and td for columns</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>legend: Placed inside a fieldset.</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>dl: dt for item to be described, dd indents and in smaller texts for description. Good for indents in general</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>ul: needs li, produces an indented list with bulletpoints</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>ol: needs li, produces an indented list numbered in order</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td>textarea: same as input but can increase its row and column span</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+
+                <tr>
+                    <td>Link different HTML pages:</td>
+                    <td>anchor tag href="destination" text for the link</td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+
+        <!--On a serious note, in isolation this was very convenient but it cosnumes far too much time otherwise.-->
+
+    <div class="javascript" id="javascript">
+        <fieldset>
+            <legend>Javascript Cheat Sheet</legend>   
+                <table id="cheatj" class="cheatj">
+                    <tr>
+                        <td>Javascript Page Setup:</td>
+                        <td>If collecting input, use 'DOMContentLoaded or defer in HTML script source</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Variables:</td>
+                        <td>let "variable name"</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>let "variable name" = document.getelementby(id) or (class)</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>Convert HTML input to javascript useable "variable name".value</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Function:</td>
+                        <td>function "name of function" "(any parameters being used)"</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Collect Input from HTML:</td>
+                        <td>addEventListener("event to listen for"), function(event) {"what happens when"};</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Loops:</td>
+                        <td>for: loops until variable value reached</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>while: loops while variable within a certain value</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Arrays</td>
+                        <td>"variable name" ["array content", "another array content"]</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>foreach: Loops through the array then stops</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Objects:</td>
+                        <td>const "Name of object" {"Parameter 1": "string", "parameter 2:" number, etc...}</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>for in loop. for (const i in "name of object") loops through properties of an object.</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Constructors:</td>
+                        <td>function "name of constructor"("parameter 1, parameter 2...") {this."parameter 1" = "paramter 1"}</td>
+                    </tr>
+
+                    <tr>
+                        <td>Use Constructor:</td>
+                        <td>const "object name" = new "name of constructor"("value for parameter 1..." etc.)</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Checking Values:</td>
+                        <td>console.log("name of variable/object")</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Changing HTML with Javascript:</td>
+                        <td>document.getElementByID("id of element").innerHTML = "text"</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>document.write("text") replaces ALL HTML.</td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2"><hr></td>
+                    </tr>
+
+                    <tr>
+                        <td>Creating Elements With Javascript:</td>
+                        <td>document.createElement("name of element")</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>setattribute("attribute", "value")</td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td>"location".appendchild.("elements to be created")</td>
+                    </tr>
+                </table>
+        </fieldset>
+
+    </div>
+    <div class="homeButton">
+        <a href="../index.html">Back To Main Page</a>
+    </div>
+</body>
+</html>
